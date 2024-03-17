@@ -23,14 +23,26 @@ html {
 .buttons {
     height: 160px;
     width: 160px;
-    background-color: #333333;
     border-radius: 50%;
+    transition: all;
+    transition-duration: 1s;
+    background-color: #333333;
+}
+.buttons:active {
+    transition-duration: 0s;
+    background-color: #737373;
 }
 .light-gray-buttons {
     background-color: #a5a5a5;
 }
+.light-gray-buttons:active {
+    background-color: #d9d9d9;
+}
 .orange-buttons {
     background-color: #ff9f0a;
+}
+.orange-buttons:active {
+    background-color: #fcc78d;
 }
 .button-symbols {
     color: white;
@@ -38,6 +50,8 @@ html {
     text-align: center;
     top: -8px;
     font-size: 72px;
+    transition: all;
+    transition-duration: 1s;
 }
 .black-symbols {
     color: black;
@@ -46,10 +60,10 @@ html {
     margin-bottom: 0;
     margin-right: 80px;
     color: white;
-    font-size: 128px;
+    font-size: 176px;
 }
 #number-0-button {
-    width: 320px;
+    width: 336px;
     border-radius: 80px;
 }
 #number-0-button-symbol {
